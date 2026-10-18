@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/bg_light_blue"
+    tools:context=".SummaryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPENSE SUMMARY"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Monthly Budget"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"/>
+
+        <TextView
+            android:id="@+id/tvBudgetValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget: Rs. 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/main_blue"
+            android:gravity="center"
+            android:layout_marginTop="6dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50"
+            android:progress="10"
+            android:progressTint="@color/main_blue"
+            android:thumbTint="@color/dark_blue"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvBudgetHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move slider in steps of Rs. 1,000"
+            android:textSize="12sp"
+            android:textColor="@color/secondary_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Expense Amount"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"/>
+
+        <EditText
+            android:id="@+id/etSummaryExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter expense amount"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:textColor="@color/dark_text"
+            android:textColorHint="@color/secondary_text"
+            android:backgroundTint="@color/primary_blue"
+            android:layout_marginTop="2dp"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE SUMMARY"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_blue"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvExpenseCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of Expenses: 0"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:background="@drawable/bg_detail_box"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalSpent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Spent: Rs. 0"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:background="@drawable/bg_detail_box"
+            android:padding="10dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvRemaining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remaining Budget: Rs. 0"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/success_green"
+            android:background="@drawable/bg_detail_box"
+            android:padding="10dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget Used: 0%"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:background="@drawable/bg_detail_box"
+            android:padding="10dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Not calculated"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:gravity="center"
+            android:background="@drawable/bg_detail_box"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

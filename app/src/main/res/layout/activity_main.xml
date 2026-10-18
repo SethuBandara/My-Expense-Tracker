@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="@color/bg_light_blue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY EXPENSE TRACKER"
+        android:textColor="@color/main_blue"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Expense Manager"
+        android:textColor="@color/secondary_text"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"/>
+
+
+    <!-- Total Spent Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="22dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_card"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL SPENT"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDashboardTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 0.00"
+            android:textColor="@color/dark_blue"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Number of Expenses Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="22dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_card"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUMBER OF EXPENSES"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDashboardCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/dark_blue"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Manage Expenses -->
+    <Button
+        android:id="@+id/btnManageExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MANAGE EXPENSES"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_blue"
+        android:layout_marginTop="28dp"/>
+
+
+    <!-- Summary -->
+    <Button
+        android:id="@+id/btnSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW SUMMARY"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/main_blue"
+        android:layout_marginTop="12dp"/>
+
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track • Manage • Save"
+        android:textColor="@color/secondary_text"
+        android:textSize="13sp"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
