@@ -27,8 +27,6 @@
         android:textSize="15sp"
         android:layout_marginTop="8dp"/>
 
-
-    <!-- Total Spent Card -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,8 +57,6 @@
 
     </LinearLayout>
 
-
-    <!-- Number of Expenses Card -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -91,8 +87,6 @@
 
     </LinearLayout>
 
-
-    <!-- Manage Expenses -->
     <Button
         android:id="@+id/btnManageExpense"
         android:layout_width="match_parent"
@@ -103,8 +97,6 @@
         android:backgroundTint="@color/primary_blue"
         android:layout_marginTop="28dp"/>
 
-
-    <!-- Summary -->
     <Button
         android:id="@+id/btnSummary"
         android:layout_width="match_parent"
@@ -115,8 +107,6 @@
         android:backgroundTint="@color/main_blue"
         android:layout_marginTop="12dp"/>
 
-
-    <!-- Footer -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
