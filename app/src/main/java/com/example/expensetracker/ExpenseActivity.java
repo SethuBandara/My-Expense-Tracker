@@ -154,9 +154,7 @@ public class ExpenseActivity extends AppCompatActivity {
     }
 
 
-    // =========================
-    // NEXT
-    // =========================
+    // Next button function
 
     private void showNextExpense() {
 
@@ -190,9 +188,7 @@ public class ExpenseActivity extends AppCompatActivity {
     }
 
 
-    // =========================
-    // PREVIOUS
-    // =========================
+    // Previous Button function
 
     private void showPreviousExpense() {
 
@@ -276,9 +272,7 @@ public class ExpenseActivity extends AppCompatActivity {
     }
 
 
-    // =========================
-    // VALIDATION
-    // =========================
+    // validation functions
 
     private boolean validateInput() {
 
@@ -360,9 +354,7 @@ public class ExpenseActivity extends AppCompatActivity {
     }
 
 
-    // =========================
-    // GET CATEGORY
-    // =========================
+    // category getting
 
     private String getSelectedCategory() {
 
@@ -381,9 +373,7 @@ public class ExpenseActivity extends AppCompatActivity {
     }
 
 
-    // =========================
-    // SET CATEGORY
-    // =========================
+    // setting category
 
     private void setCategoryRadioButton(
             String category) {
@@ -407,9 +397,7 @@ public class ExpenseActivity extends AppCompatActivity {
     }
 
 
-    // =========================
-    // CLEAR
-    // =========================
+    // clear function
 
     private void clearInputFields() {
 
